@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9fcfb;
+  margin: 0;
+  color: #333;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #4cbfa6;
+  color: white;
+  padding: 1.5rem;
+}
+.sidebar h2 {
+  margin-bottom: 1.5rem;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  padding: 0.8rem 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sidebar li:hover,
+.sidebar .active {
+  color: #00332c;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.header .profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Cards */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+.card {
+  background: #e7f6f2;
+  border-radius: 16px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card i {
+  font-size: 24px;
+  color: #4cbfa6;
+}
+
+/* Table */
+.appointments {
+  padding: 1rem 2rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+th,
+td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background: #e7f6f2;
+}
+
+/* Prescriptions */
+.prescriptions {
+  padding: 1rem 2rem;
+}
+.prescriptions ul {
+  list-style: none;
+  padding: 0;
+}
+.prescriptions li {
+  background: #e7f6f2;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+/* Profile Info */
+.profile-info {
+  padding: 1rem 2rem;
+}
+.profile-info ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+}
