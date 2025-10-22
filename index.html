@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthTrack – Patient Wellness Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>HealthTrack</h2>
+      <nav>
+        <ul>
+          <li class="active"><i class="fa-solid fa-house-medical"></i> Overview</li>
+          <li><i class="fa-solid fa-calendar-check"></i> Appointments</li>
+          <li><i class="fa-solid fa-pills"></i> Prescriptions</li>
+          <li><i class="fa-solid fa-file-medical"></i> Reports</li>
+          <li><i class="fa-solid fa-gear"></i> Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main>
+      <!-- Header -->
+      <header class="header">
+        <div class="profile">
+          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=100" alt="Patient profile">
+          <div>
+            <h3>Sarah Khan</h3>
+            <p>ID #P1024</p>
+          </div>
+        </div>
+        <i class="fa-regular fa-bell notifications"></i>
+      </header>
+
+      <!-- Health Metrics -->
+      <section class="metrics">
+        <div class="card"><i class="fa-solid fa-heart-pulse"></i><h4>Heart Rate</h4><p>78 bpm</p></div>
+        <div class="card"><i class="fa-solid fa-stethoscope"></i><h4>Blood Pressure</h4><p>118/75 mmHg</p></div>
+        <div class="card"><i class="fa-solid fa-lungs"></i><h4>Oxygen</h4><p>98%</p></div>
+        <div class="card"><i class="fa-solid fa-weight-scale"></i><h4>BMI</h4><p>22.4</p></div>
+      </section>
+
+      <!-- Appointments -->
+      <section class="appointments">
+        <h3>Upcoming Appointments</h3>
+        <table>
+          <thead>
+            <tr><th>Date</th><th>Doctor</th><th>Department</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Oct 25</td><td>Dr. Mehta</td><td>Cardiology</td><td>Confirmed</td></tr>
+            <tr><td>Nov 1</td><td>Dr. Roy</td><td>Nutrition</td><td>Pending</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Prescriptions -->
+      <section class="prescriptions">
+        <h3>Prescriptions</h3>
+        <ul>
+          <li><b>Atorvastatin</b> — 10mg | Dr. Mehta | 2 Weeks</li>
+          <li><b>Vitamin D</b> — 1000 IU | Dr. Roy | 1 Month</li>
+        </ul>
+      </section>
+
+      <!-- Profile -->
+      <section class="profile-info">
+        <h3>Patient Profile</h3>
+        <ul>
+          <li><b>Name:</b> Sarah Khan</li>
+          <li><b>Age:</b> 29</li>
+          <li><b>Gender:</b> Female</li>
+          <li><b>Email:</b> sarah@example.com</li>
+          <li><b>Phone:</b> +91 98765 43210</li>
+          <li><b>Doctor:</b> Dr. Mehta</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
